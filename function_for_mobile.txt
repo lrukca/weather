@@ -1,0 +1,11 @@
+* 모바일 관련 함수 기능들
+
+touchstart : 손가락이 스크린에 닿을 때
+touchmove : 손가락이 스크린에 닿을 채로 움직일 때
+touchend : 손가락을 뗄 때
+touchcancel, thuched -- 취소 이벤트
+
+
+gesturestart : 두번째 손가락이 화면에 닿을 때
+getsurechange : 두 개 이상의 손가락이 화면에 닿은 상태에서 움직일 때
+gestureend : 두 개 이상의 손가락이 닿은 상태에서 하나의 손가락이 떨어질 때

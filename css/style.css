@@ -1,0 +1,124 @@
+@import url("reset.css");
+@import url("webfonts.css");
+@import url("weather-icons.css");
+@import url("weather-icons-wind.css");
+@import url("bootstrap-grid.min.css");
+
+body{
+    background-color: rgb(90, 173, 237);
+    font-size: 16px;
+    font-family: notoSansKr, sans-serif;
+    color: #fff;
+}
+nav{
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+.searchBox{
+    border: 1px solid rgba(255, 255, 255, 0);
+    border-radius: 1.5em;
+    padding: 3px;
+}
+.searchBox input[type=search]{
+    width: 1px;
+    transition: all 0.3s;
+}
+.searchBox.active{
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+.searchBox.active input[type=search]{
+    width: 150px;
+}
+.search{
+    margin-right: 5px;
+}
+#search{
+    border: none;
+    background: transparent;
+}
+#search:focus{outline: none;}
+
+h1.city-title{
+    font-size: 1.7em;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+}
+.ntime{
+    margin-bottom: 1.2em;
+}
+.margin-auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+.text-center{
+    text-align: center;
+}
+#iconbox, #nowtemp{
+    height: 100px;
+}
+#iconbox{
+    text-align: right;
+}
+#nowtemp{
+    font-size: 4em;
+    line-height: 1.1em;
+    text-align: left;
+    font-weight: 700;
+}
+#minmaxtemp{
+    margin-bottom: 10px;
+}
+.py-20{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+.light-blue{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.light-blue li{
+    line-height: 1.8em;
+}
+span.material-icons{
+    font-size: 20px;
+    line-height: 20px;
+}
+
+/** dayweather **/
+#wrapper{
+    overflow: hidden;
+    height: 200px;
+}
+#swipper{
+    flex-wrap: nowrap;
+    position: relative;
+}
+#swipper li{
+    padding: 10px 15px;
+}
+.dayWeather{
+    width: 120px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: #333;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 0 rgba(246, 239, 35, 0.15), 
+                0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+.daydate{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.dayWeather img{
+    height: 60px;
+}
+.daytemp{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
